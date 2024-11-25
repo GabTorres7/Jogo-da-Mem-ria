@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura Futurista</title>
+    <script src="game.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="game-title">
+            <h1>Pedra, Papel e Tesoura</h1>
+            <div class="waiting-message">Aguardando outro jogador...</div>
+        </div>
+        
+        <div class="game-area hidden">
+            <div class="scores">
+                <div class="score player1">Jogador 1: <span>0</span></div>
+                <div class="score player2">Jogador 2: <span>0</span></div>
+            </div>
+            
+            <div class="choices">
+                <button class="choice-btn" data-choice="pedra">🪨</button>
+                <button class="choice-btn" data-choice="papel">📄</button>
+                <button class="choice-btn" data-choice="tesoura">✂️</button>
+            </div>
+            
+            <div class="result hidden">
+                <div class="result-message"></div>
+                <button class="play-again">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <p>&copy; 2024 Fabrício Roberto</p>
+    </footer>
+    
+</body>
+</html>
+
